@@ -34,7 +34,7 @@ actions/index.js
 
 ``` javascript
 
-export { default as loading } from './loading'
+export { default as count } from './count'
 
 ```
 
