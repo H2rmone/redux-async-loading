@@ -38,8 +38,6 @@ export { default as loading } from './loading'
 
 ```
 
-reducer
-
 ### Step 2: Init
 
 store.js
@@ -85,7 +83,7 @@ import { connect } from 'react-redux'
 @connect(
   ({ Loading }) => ({
     loading: Loading.count.increment,
-  }),
+  })
 )
 
 class Count extends React.PureComponent {
