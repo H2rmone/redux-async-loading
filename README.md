@@ -1,6 +1,5 @@
 # Redux Async Loading
 
----
 Tired of dispatching loading state for async actions? Try `redux-async-loading`!
 
 ## Installation
@@ -9,7 +8,7 @@ Tired of dispatching loading state for async actions? Try `redux-async-loading`!
  yarn add redux-async-loading
  // or
  npm install redux-async-loading --save
- 
+
 ```
 
 ## Usage
@@ -23,8 +22,9 @@ actions/count.js
 ``` javascript
 
 export default (dispatch) => ({
-  async increment (payload) {
+  async increment () {
     await new Promise(resolve => setTimeout(resolve, 1000))
+    // add your dispatch here
   },
 })
 
