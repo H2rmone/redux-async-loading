@@ -1,7 +1,8 @@
 {
   "name": "redux-async-loading",
   "version": "0.0.1",
-  "description": "a middleware for auto managing async action loading state in redux",
+  "description": "An automatic monitor middleware of global modularized loading state for async actions.",
+  "repository": "github:H2rmone/redux-async-loading",
   "main": "./dist/redux-async-loading.min.js",
   "scripts": {
     "build": "rollup --config rollup.config.js"
