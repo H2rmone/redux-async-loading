@@ -1,0 +1,23 @@
+{
+  "name": "redux-async-loading",
+  "version": "0.0.1",
+  "description": "a middleware for auto managing async action loading state in redux",
+  "main": "./dist/redux-async-loading.min.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "redux-async-loading"
+  ],
+  "author": "H2rmone",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.60.7",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-uglify": "^4.0.0"
+  }
+}
