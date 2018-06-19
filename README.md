@@ -88,9 +88,11 @@ import { connect } from 'react-redux'
 
 class Count extends React.PureComponent {
   render () {
+    const { dispatch, loading } = this.props
+
     return (
       <div>
-        <button onClick={this.props.dispatch({ type: 'count/increment' })}> async action </button>
+        <button onClick={dispatch({ type: 'count/increment' })}> async action </button>
         {loading && <p> loading... </p>}
       </div>
     )
