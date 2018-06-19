@@ -1,6 +1,6 @@
 {
   "name": "redux-async-loading",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An automatic monitor middleware of global modularized loading state for async actions.",
   "repository": "github:H2rmone/redux-async-loading",
   "main": "./dist/redux-async-loading.min.js",
