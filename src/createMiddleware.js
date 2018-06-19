@@ -1,4 +1,4 @@
-import wrapLoading from './utils/core'
+import wrapLoading from './core'
 import { isPlainObject } from './utils/isPlainObject'
 
 /**

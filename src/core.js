@@ -1,4 +1,4 @@
-import * as types from './constants'
+import * as types from './utils/constants'
 
 /**
  * wrap gobal loading state in redux
