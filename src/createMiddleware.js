@@ -18,8 +18,14 @@ export default function createMiddleware (models) {
       const { type, ...payload } = action
       const [model, name] = type.split('/')
 
-      // map action to dispatch
-      const modelAction = models[model](dispatch, getState)[name]
+      // check model
+      const modelActions = models[model]
+      if (!modelActions) return next(action)
+
+      // check action
+      const modelAction = modelActions(dispatch, getState)[name]
+      if (!modelAction) return next(action)
+
       // Disabled loading wrap for plain object actions.
       const finalAction = typeof modelAction === 'function'
         ? wrapLoading(modelAction, model, name, payload)
